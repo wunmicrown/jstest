@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <center>
+    <div>
+
+      <button onclick="use('Tresure')">A</button>
+      <button onclick="use('Dragons Layer')">B</button>
+      <button onclick="use('Escape')">C</button>
+    </div>
+    <div style="margin-top: 50px;">
+      <button onclick="cards('Prize')">Red</button>
+      <button onclick="cards('Penality')">Blue</button>
+    </div>
+    <div>
+      <h4>what is your favorite color?</h4>
+      <input type="text" placeholder="Recovery System" id="system"><br>
+      <h4>What is your pet's name?</h4>
+      <input type="text" placeholder="Recovery System" id="petname"><br><br>
+      <button onclick="security()">Reset password</button>
+    </div>
+    <div>
+      <h4>your Age</h4>
+      <input type="number" placeholder="AGE" id="age">
+  
+      <h4>Country</h4>
+      <input type="text" placeholder="COUNTRY" id="country"><br><br>
+      <button onclick="reg()">Register</button>
+    </div>
+  </center>
+ 
+  <p>
+    <!-- Create functions that interpret and solve the questions below:
+
+1) If there are two doors, one leading to treasure and the other to a dragon's lair, and you have two keys labeled "A" and "B." Key "A" opens the door to treasure, and key "B" opens the door to the dragon's lair. Create a function to determine which key opens the door to the treasure.
+
+2) In a game of chance, you have two cards labeled "Red" and "Blue." One card leads to a prize, and the other to a penalty. Create a function to determine which card leads to the prize.
+
+3) In a computer program, you have two variables, "isLogged" and "isAdmin." If "isLogged" is true, it means a user is logged in, and if "isAdmin" is true, it means the user has admin privileges. Create a function to check if the user is both logged in and has admin privileges.
+
+4) In a password recovery system, there are two security questions: "What is your favorite color?" and "What is your pet's name?" If the correct answers to both questions are provided, the password is reset. Create a function to check if both security questions are answered correctly.
+
+5) In a voting system, there are two criteria for a vote to be valid: the voter must be at least 18 years old and a citizen of the country. Create a function to determine if a person's vote is valid based on their age and citizenship status. -->
+  </p>
+    <script>
+    
+
+       // Give answers to these:
+//The result could either be true or false.
+
+// Question 1: What is the result of the following expression?
+const result1 = true && false || true;
+// let a=50
+// if (a==50 && a==70 || a==50 ) {
+//   console.log(true);
+// }
+// Question 2: What is the result of the following expression?
+const result2 = !true || (false && true);
+// let b=60
+// if (b!==60 || (b==40 && b==60)) {
+//   console.log(false);
+// }
+// Question 3: What is the result of the following expression?
+const result3 = (true || false) && (!false || true);
+// console.log(false);
+// let firstvalue="90"
+// if(firstvalue="90" || firstvalue==60 && (!firstvalue=="90" || firstvalue=="90")){
+//     console.log(true);
+// }
+// Question 4: What is the result of the following expression?
+const result4 = true && (false || true) && (!false || true);
+// let c=10
+// if (c==10 && (c==15 || c==10) &&(!c==10 || c==10)) {
+//   console.log(false);
+// }
+// Question 5: What is the result of the following expression?
+const result5 = (false && true) || (true && !false);
+  // let d=40
+  // if ((d==45 && d==40) || (d==40 && d!==40)) {
+  //   console.log(false);
+  // }
+// Question 6: What is the result of the following expression?
+const result6 = !(false && true) || (true && !false);
+// let e=50
+// if (!(e==55 || e==50) || (e==50 && e!==50)) {
+//   console.log("yes");
+// }
+// Question 7: What is the result of the following expression?
+const result7 = true && false && true || false || true;
+// let f=70
+// if (f==70 && f==77 && f==70 ) {
+//   console.log("show");
+// }
+// if ( f==77 || f==70 ) {
+//   console.log("don't know why is not showing ");
+// }
+// Question 8: What is the result of the following expression?
+const result8 = false || true && false && true || true;
+let g=80
+if ( g==80 || g==80) {
+  console.log(true);
+}
+// Question 9: What is the result of the following expression?
+const result9 = (false || true) && (false && true || true);
+
+// Question 10: What is the result of the following expression?
+const result10 = !(true && false) || !(false || true);
+    </script>
+  <script src="./index.js"></script>
+</body>
+</html>
