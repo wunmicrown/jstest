@@ -32,8 +32,7 @@ function privilege() {
       alert('Incorrect details ')
     }
 }
-  let age=18
-  let country="Nigeria"
+
  function reg() {
     if(age.value >=18  && country.value == "Nigeria") {
         alert("your vote is valid")
