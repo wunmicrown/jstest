@@ -19,13 +19,17 @@
       <button style="background-color: rgb(43, 43, 195); color: white;" onclick="cards('Penality')">Blue</button>
     </div>
     <div>
-      <h4>computer program</h4>
-      <input type="text" placeholder="computer program" id="program"><br>
-      <h4>Admin.</h4>
-      <input type="text" placeholder="Admin" id="admin"><br><br>
+      <h4>Authentication</h4>
+      <label style="color: white;" for="program">
+        <input type="checkbox"  id="program"> is logged in?
+      </label> 
+        &nbsp;&nbsp;&nbsp;
+      <label style="color: white;" for="admin">
+        <input type="checkbox" id="admin"> is admin?
+      </label><br><br>
       <button style="background-color: blue; color: white;" onclick= "privilege()">Log in</button>
     </div>
-    <div>
+    <div >
       <h4>what is your favorite color?</h4>
       <input type="text" placeholder="Recovery System" id="system"><br>
       <h4>What is your pet's name?</h4>
@@ -56,9 +60,10 @@
 
 5) In a voting system, there are two criteria for a vote to be valid: the voter must be at least 18 years old and a citizen of the country. Create a function to determine if a person's vote is valid based on their age and citizenship status. -->
   </p>
+  <p id="chars"></p>
+  <!-- <p> Create a function that finds the first non-repeated character in a given string using the charAt() method.</p> -->
     <script>
     
-
        // Give answers to these:
 //The result could either be true or false.
 
@@ -126,6 +131,265 @@ const result10 = !(true && false) || !(false || true);
 // if (!(i==95 && i==92) || !(i==92 || i==95)){
 //   console.log(true);
 // }
+
+//QUESTIONS & ANSWER
+// 1. push:
+// 1a. What does the push method do in JavaScript arrays?
+//  a. The `push` method in JavaScript arrays is used to add one or more elements to the end of an array.
+
+// 1b. How do you add an element to the end of an array using push?
+//  b. To add an element to the end of an array using `push`, i can simply call array.push(element), where array is the array you want to modify and element is the value you want to add to the push.
+
+// 1c. Can you add multiple elements to an array with a single push call?
+//  c. Yes, i can add multiple elements to an array with a single `push` call by providing multiple elements, eg: array.push("element1", "element2").
+
+// 1d. What is the return value of the push method?
+//  d. The return value of the `push` method is the new length of the array after the elements have been added, eg: fruits.length("element ");
+
+// 2. pop:
+// 2a. Explain the purpose of the pop method in JavaScript arrays.
+//  a. The `pop` method in JavaScript arrays is used to remove the last element from an array.
+
+// 2b. How do you remove the last element from an array using pop?
+//  b. To remove the last element from an array using `pop`, i can simply call array.pop(), where `array` is the array i want to modify.
+
+// 2c. Is the pop method reversible? If so, how?
+//  c. yes, The `pop` method is reversible by adding the removed element back to the array using push
+
+// 2d. What happens when you call pop on an empty array?
+//  d. When you call `pop` on an empty array, it returns `undefined`, and the array remains empty.
+
+// 3. shift:
+// 3a. What is the role of the shift method in JavaScript arrays?
+//  a. The `shift` method in JavaScript arrays is used to remove the first element from an array.
+
+// 3b. How do you remove the first element from an array using shift?
+//  b. To remove the first element from an array using `shift`, i can call array.shift(), where `array` is the array you want to modify.
+
+// 3c. Can you use shift to add an element to the beginning of an array?
+//  c. no, `shift` is do used for removing elements, you can also use it in combination with `unshift` to add an element to the beginning of an array.
+
+// 3d. What is the difference between shift and unshift?
+//  d. The main difference between `shift` and `unshift` is that `shift` removes and returns the first element, while `unshift` adds elements to the beginning of an array and returns the new length of the array.
+
+// 4. unshift:
+// 4a. Describe the purpose of the unshift method in arrays.
+//  a. The `unshift` method in JavaScript arrays is used to add one or more elements to the beginning of an array.
+
+// 4b. How do you add an element to the beginning of an array using unshift?
+//  b. To add an element to the beginning of an array using `unshift`, you can call array.unshift(element), where array is the array you want to modify, and element is the value you want to add.
+
+// 4c. Can you add multiple elements to the beginning of an array with a single unshift call?
+//  c. Yes, you can add multiple elements to the beginning of an array with a single `unshift` call by providing multiple elements, like this: array.unshift(element1, element2).
+// 4d. What does unshift return?
+//  d. The return value of the `unshift` method is the new length of the array after the elements have been added.
+
+// 5. map:
+// 5a. What is the primary purpose of the map method in JavaScript arrays?
+//  a. The primary purpose of the `map` method in JavaScript arrays is to create a new array by applying a given function to each element of the original array.
+
+// 5b. How does map differ from forEach in terms of return values?
+//  b. Unlike `forEach`, `map` returns a new array containing the results of applying the provided function to each element. It doesn't modify the original array.
+
+// 5c. Can you modify the original array using map?
+//  c. No, `map` does not modify the original array; it creates a new one.
+
+// 5d. How do you use the map method to double each element in an array?
+//  d. You can use the `map` method to double each element in an array like this:
+
+  //  const originalArray = [1, 2, 3, 4];
+  //  const doubledArray = originalArray.map(element => element * 2);
+  // //  doubledArray will be [2, 4, 6, 8
+
+// 6. filter:
+// 6a. Explain the use of the filter method in JavaScript arrays.
+//  a. The `filter` method in JavaScript arrays is used to create a new array containing elements that pass a certain condition specified by a provided function.
+
+// 6b. How do you filter elements in an array based on a condition using filter?
+//  b. To filter elements in an array based on a condition, you can call array.filter(anything you want to callback), where `array` is the array you want to filter, and `callback` is a function that returns `true` for elements you want to keep.
+
+// 6c. What is the return value of the filter method?
+//  c. The return value of the `filter` method is a new array containing elements that's good for the condition.
+
+// 6d. Can you chain multiple filter calls together?
+//  d. Yes, you can chain multiple `filter` calls together to apply multiple filtering conditions sequentially.
+
+
+// 7. includes:
+// 7a. What does the includes method check in JavaScript arrays?
+//  a. The `includes` method in JavaScript arrays checks if a specific element exists in the array.
+
+// 7b. How do you use includes to determine if an element exists in an array?
+//  b. To determine if an element exists in an array using `includes`, you can call `array.includes(element)`, where `array` is the array you want to search and `element` is the value you're looking for.
+
+// 7c. Does includes work for complex data structures like objects or arrays?
+//  c.no, `includes` works for simple data types like numbers and strings but not for complex data structures like objects or arrays.
+
+// 7d. What is the return value of the includes method?
+//  d. The return value of the `includes` method is a Boolean (`true` if the element is found, `false` otherwise).
+
+//8. every:
+// 8a. What is the purpose of the every method in JavaScript arrays?
+//  a. The `every` method in JavaScript arrays is used to check if all elements in an array meet a certain condition specified by a provided function.
+
+// 8b. How do you use every to check if all elements in an array meet a condition?
+//  b. To use `every` to check if all elements meet a condition, you can call `array.every(anything you want to callback)`, where `array` is the array you want to check, and `callback` is a function that evaluates the condition.
+
+// 8c. What is the early termination behavior of every?
+//  c. `every` has early termination behavior. It stops checking as soon as it finds an element that doesn't meet the condition, returning `false`. If all elements pass the condition, it returns `true`.
+
+// 8d. How does every differ from some?
+//  d. The `every` method differs from `some` in that every checks if all elements meet the condition, while some checks if at least one element meets the condition.
+
+
+// PUSH
+
+// Question: Write a JavaScript function that takes an array and an element as arguments and adds the element to the end of the array using the push() method.
+
+// Question: Given an array of colors, write a function to add a new color to the list using the push() method. Return the updated array.
+
+
+// POP
+
+// Question: Write a JavaScript function that takes an array as an argument and removes the last element from the array using the pop() method.
+
+// Question: Given an array of names, write a function to remove the last name from the list using the pop() method. Return the updated array.
+
+// Question: Create an array of integers. Write a function that removes the last integer from the array using the pop() method. Return the updated array.
+
+// Question: Write a function that takes two arrays as arguments and removes the last element from the first array using the pop() method. Return the updated array.
+
+// Question: Create a function that simulates a stack data structure using an array. Implement a pop() method to remove elements from the stack. Also, implement a push() method to add elements to the stack.
+
+// Question: Write a function that takes an array and an element as arguments and removes the last occurrence of the element from the array using the pop() method. Return the updated array.
+
+// Question: Create an array to represent a playlist of songs. Write a function that simulates removing the last song from the playlist using the pop() method. Return the updated playlist.
+
+// Question: Implement a shopping cart using an array. Write functions to remove products from the cart using the pop() method, add products, and calculate the total cost of items in the cart.
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Write a function that takes a string and an index as parameters and returns the character at that index. Implement error handling if the index is out of bounds.
+
+// Create a function that finds the first non-repeated character in a given string using the charAt() method.
+
+// Write a function that calculates the sum of the ASCII values of all characters in a string using the charCodeAt() method.
+
+// Create a function that checks if a string contains only uppercase letters using the charCodeAt() method.
+
+// Implement a function that concatenates two strings without using the + operator but instead using the concat() method.
+
+// Write a function that accepts an array of strings and concatenates them into a single string using the concat() method.
+
+
+// Create a function that checks if a given substring exists within a larger string.
+
+// Implement a function that finds all occurrences of a word in a text string.
+
+
+// Write a function that finds the first occurrence of a specified character in a string.x
+
+// Implement a function that counts the number of occurrences of a word in a text string.
+
+
+// Create a function that extracts a portion of a string between two specified indices using the slice() method.
+
+// Write a function that removes the last n characters from a string using the slice() method.
+
+
+// Implement a function that splits a string into an array of words using the split() method. Remove any punctuation marks.
+
+// Create a function that parses a comma-separated string into an array of values using the split() method.
+
+
+// Write a function that extracts a substring from a given string between two specified indices using the substring() method.
+
+// Create a function that reverses a substring within a larger string using the substring() method.
+
+
+// Implement a function that converts all characters in a string to lowercase.
+
+// Write a function that checks if two strings are equal (case-insensitive).
+
+// Create a function that converts the first letter of each word in a sentence to uppercase.
+
+// Implement a function that checks if a string is in all uppercase letters.
+
+// Write a function that checks if a given string ends with a specified substring.
+
+// Create a function that checks if a file name has a valid file extension (e.g., ".jpg", ".txt").
+
+// Implement a function that checks if a given string starts with a specified prefix.
+
+// Write a function that validates whether a URL begins with "http://" or "https://".
+
+// Create a function that removes leading and trailing whitespace from a string.
+
+// Write a function that trims a given string to a specified maximum length while preserving word boundaries using the trim() method.
+
+// Implement a function that removes trailing whitespace from a string using the trimEnd() method.
+
+// Create a function that trims a file path by removing any trailing slashes using the trimEnd() method.
+
+// Write a function that removes leading whitespace from a string using the trimStart() method.
+
+// Implement a function that trims a list of usernames by removing any leading spaces using the trimStart() method.
+
+// Create a function that repeats a given string a specified number of times.
+
+// Implement a function that generates a pattern of asterisks, where each row has one more asterisk than the previous row, using the repeat() method.
+
+// Write a function that replaces all occurrences of a specified substring with another string.
+
+// Implement a function that formats a phone number by adding dashes in the appropriate places using the replace() method.
+
+// Create a function that pads a string on the left with a specified character until it reaches a desired length.
+
+// Write a function that formats a time in 24-hour format (e.g., "17:5" becomes "17:05") using the padStart() method.
+
+// Implement a function that pads a string on the right with a specified character until it reaches a desired length.
+
+// Create a function that generates a table of contents for a document, aligning page numbers using the padEnd() method.
+
+// Create a function that extracts all email addresses from a given text using the match() method and a regular expression.
+
+// Implement a function that counts the number of occurrences of a specific word in a text using the match() method.
+
+// Write a function that searches for a specified substring within a string and returns the index of the first occurrence using the search() method.
+
+// Create a function that checks if a URL contains a specific query parameter using the search() method.
+
+// Write a function that finds and returns the index of the first occurrence of a specified character in a given string using the indexOf() method. If the character is not found, return -1.
+
+// Implement a function that searches for a word in a text string and returns the index of the first occurrence using the indexOf() method. If the word is not found, return -1.
+
+// Create a function that finds and returns the index of the last occurrence of a specified character in a given string using the lastIndexOf() method. If the character is not found, return -1.
+
+// Write a function that searches for the last occurrence of a word in a text string and returns the index using the lastIndexOf() method. If the word is not found, return -1.
+
+// Implement a function that takes a string and an index as parameters and returns the character at that index using the charAt() method. Handle cases where the index is out of bounds.
+
+// Create a function that extracts the middle character (or characters) from a string using the charAt() method. If the string has an even length, return the two middle characters.
+
+// Write a function that counts the number of vowels (a, e, i, o, u) in a given string by iterating through its characters using the length property.
+
+// Implement a function that checks if a string has a length that is a multiple of 5 using the length property. Return true if it is and false otherwise.
+
+
+
+
+
+
     </script>
   <script src="./index.js"></script>
 </body>
