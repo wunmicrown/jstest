@@ -14,7 +14,7 @@ function CharAtIndex(nameString, index) {
 //2.
 const programStr = "pprogrammingg";
 const rslt = fndFirstNonRepeatedChar(programStr);
-console.log(`The first non-repeated character is: ${rslt}`);
+console.log(`The first non-repeated character is: `+ rslt);
 
 function fndFirstNonRepeatedChar(programStr) {
   const charCount = {};
