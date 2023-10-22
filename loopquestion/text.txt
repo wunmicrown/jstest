@@ -1,0 +1,42 @@
+Part One:
+1. *What is a `for` loop in JavaScript, and what is its primary purpose?*
+
+2. *How do you declare and initialize a counter variable in a `for` loop?*
+
+3. *Write a `for` loop that counts from 1 to 5 and logs each number to the console.*
+
+4. *What is the syntax for a `for` loop in JavaScript?*
+
+5. *Explain the three parts of a `for` loop: initialization, condition, and increment.*
+
+6. *Write a `for` loop that prints the even numbers from 2 to 10.*
+
+7. *What is an infinite loop, and how can you avoid creating one with a `for` loop?*
+
+8. *What is the difference between a `for` loop and a `while` loop?*
+
+9. *Write a `for` loop that iterates backward from 10 to 1 and logs each number to the console.*
+
+10. *How can you break out of a `for` loop prematurely, before it reaches its normal exit condition?*
+
+
+Part Two:
+1. Write a for loop that counts from 1 to 5 and logs each number to the console.
+
+2. Create a for loop that prints the multiples of 3 from 3 to 15.
+
+3. Write a for loop to calculate the sum of numbers from 1 to 10 and store the result in a variable called total.
+
+4.  Create a for loop to print the square of numbers from 1 to 5.
+
+5.  Write a for loop that logs the numbers from 10 down to 1.
+
+6. Use a for loop to print "Hello, World!" five times, each on a new line.
+
+7.  Create a for loop that logs the even numbers from 2 to 10.
+
+8. Write a for loop to calculate the product of numbers from 1 to 5 and store the result in a variable called product.
+
+9. Use a for loop to print the numbers from 5 to 15, but skip every even number.
+
+10. Write a for loop that prints the numbers from 0 to 3 in reverse order (3, 2, 1, 0).

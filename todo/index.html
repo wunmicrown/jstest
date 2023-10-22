@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .todo-item{
+      border-radius: 4px;
+      padding: 10px;
+      box-shadow: 0px 0px 3px 1px rgba(0,0,0, 0.3);
+      margin: 10px 0;
+      padding: 20px;
+      max-width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    button{
+      outline: none;
+      border: none;
+    }
+    
+    .add-btn{
+      width: 120px;
+      padding: 10px;
+    }
+
+    .dlt-btn{
+      padding: 4px 6px;
+      color: red;
+      font-weight: bold;
+      outline: none;
+      background: white;
+      box-shadow: 0px 0px 2px 2px rgba(0,0,0, 0.3);
+    }
+
+    input[type=checkbox]{
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>TODO LIST APP</h1>
+
+  <form style="margin-bottom: 40px;" onsubmit="createTodo(event)">
+    <div>
+      <label for="time">Date</label> <br>
+      <input name="time" id="time" type="datetime-local">
+    </div>
+    <div>
+      <label for="description">Description</label> <br>
+      <textarea  name="description" id="description"  placeholder="Description" ></textarea>
+    </div>
+    <div style="display: none; color: red; font-size: 80%;" id="error">
+      Both fields are required 
+    </div>
+    <button class="add-btn">Add</button>
+  </form>
+
+  <div id="todoContainer"></div>
+</body>
+<script>
+  let todoList = [];
+
+
+
+  function createTodo(event){
+    event.preventDefault();
+    error.style.display = "none";
+    // const form = event.target
+    // console.log(form['time'].value)
+    // console.log(form['description'])
+
+    const formData = new FormData(event.target)
+    const time = formData.get('time')
+    const description = formData.get('description')
+    console.log(description, time);
+
+    if(!time || !description.trim()){
+      error.style.display = "block"
+      return
+    }
+
+    let todoObject = {
+      time,
+      description,
+      done: false,
+      id: Math.random().toString(26)+ Date.now().toString()
+    }
+
+    todoList.push(todoObject);
+
+    console.log(todoList);
+    showTodoList()
+    
+  }
+
+  function showTodoList(){
+    todoContainer.innerHTML ="";
+    for (let index = 0; index < todoList.length; index++) {
+      const {description, time, done, id } = todoList[index];
+      todoContainer.innerHTML += `<div class="todo-item"> 
+          <span>${description}</span>
+          <span>${time}</span>
+          <input  type="checkbox" ${done? 'checked': ''} onchange="changeDOne(this, '${id}')" />
+          <button class="dlt-btn" onclick="removeItem('${id}')"> X</button>
+        </div>`      
+    }
+  }
+
+  function removeItem(todoId){
+    todoList = todoList.filter((todoObject)=>{
+      return todoObject.id != todoId
+    });
+    console.log(todoList);
+    showTodoList()
+  }
+
+  function changeDOne(dom, id){
+    console.log(dom.checked, id);
+    const currentTodoIndex = todoList.findIndex((todoObject)=> todoObject.id == id)
+    todoList[currentTodoIndex].done = dom.checked
+
+    const doneList = todoList.filter((todoObject)=>todoObject.done)
+    const undoneList = todoList.filter(todoObject=> !todoObject.done)
+     
+    todoList = [...undoneList, ...doneList]
+    showTodoList()
+  }
+</script>
+</html>
