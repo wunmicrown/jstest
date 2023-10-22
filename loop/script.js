@@ -1,9 +1,9 @@
 let increment = 1;
-
 for (let i = 1; i <= 10; i += increment) {
   console.log(i);
   show.innerHTML += `<p>${i}</p>`
 }
+
 let increse = 2;
 for (let i = 2; i <= 10; i += increse) {
   console.log(i);
@@ -11,8 +11,8 @@ for (let i = 2; i <= 10; i += increse) {
 
 }
 
-let divisided = 1
-for (let i = 1; i <= 20; i += divisided) {
+let approximate = 1
+for (let i = 1; i <= 20; i += approximate) {
   console.log(i);
   show.innerHTML += `<p style="color:lime">${i}</p>`
   if (i % 3 === 0) {
