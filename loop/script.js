@@ -1,26 +1,38 @@
-let increment = 1;
-for (let i = 1; i <= 10; i += increment) {
-  console.log(i);
-  show.innerHTML += `<p>${i}</p>`
+let increment =1
+for (let i = 1; i <= 10; i+=increment) {
+    console.log(i);
+    show.innerHTML += `<p>${i}</p>`
+    if (i === 10) {
+        let decrement=1
+        for (let ind = 9; ind >= 1; ind-=decrement) {
+            console.log(ind);
+            show.innerHTML += `<p style="color:red">${ind}</p>`
+        }
+    }
 }
-
-let increse = 2;
-for (let i = 2; i <= 10; i += increse) {
-  console.log(i);
-  show.innerHTML += `<p style="color:red">${i}</p>`
-
+let increase =1
+for (let i = 1; i <= 10; i+=increase) {
+    console.log(i);
+    show.innerHTML += `<p style="color:aqua">${i}</p>`
+    if (i === 10) {
+        let decrement=2
+        for (let returnInd = 8; returnInd >= 1; returnInd-=decrement) {
+            console.log(returnInd);
+            show.innerHTML += `<p style="color:lime">${returnInd}</p>`
+        }
+    }
 }
-
-let approximate = 1
-for (let i = 1; i <= 20; i += approximate) {
-  console.log(i);
-  show.innerHTML += `<p style="color:lime">${i}</p>`
-  if (i % 3 === 0) {
-    console.log(`${i} is divisible by three`);
-    show.innerHTML += `<p style="color:blue">${i} is divisible by three</p>`
-  }
+let incremen =1
+for (let i = 1; i <= 20; i+=incremen) {
+    console.log(i);
+    show.innerHTML += `<p style="color:red">${i}</p>`
+    if (i === 20) {
+        let divisible=3
+        for (let IndToReturn = 18; IndToReturn >= 1; IndToReturn -=divisible) {
+            console.log(IndToReturn);
+            show.innerHTML += `<p style="color:purple">${IndToReturn}</p>`
+        }
+    }
 }
-
-
 
 
