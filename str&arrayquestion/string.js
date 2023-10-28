@@ -1,8 +1,8 @@
 //1.
 const nameString = "Pamilerin";
-const index = 8;
-const result = CharAtIndex(nameString, index);
-function CharAtIndex(nameString, index) {
+const index = 6;
+const result = specifiedInd(nameString, index);
+function specifiedInd(nameString, index) {
   if (nameString) {
     const char = nameString.charAt(index);
     console.log(char);
@@ -30,8 +30,7 @@ function fndFirstNonRepeatedChar(programStr) {
   }
   return null;
 }
-
-//5.
+5.
 const string1 = "Olushola ";
 const string2 = "bidemi";
 const concatenate = concatenateString(string1, string2);

@@ -1,5 +1,4 @@
 Write a function that takes a string and an index as parameters and returns the character at that index. Implement error handling if the index is out of bounds.
-
 Create a function that finds the first non-repeated character in a given string using the charAt() method.
 Write a function that calculates the sum of the ASCII values of all characters in a string using the charCodeAt() method.
 Create a function that checks if a string contains only uppercase letters using the charCodeAt() method.
