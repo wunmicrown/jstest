@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            aspect-ratio: 2/1;
+            filter: drop-shadow(0 0 0.35rem black);
+        }
+        .hide{
+            display: none;
+        }
+        .container{
+            padding: 20px;
+        }
+        .con{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>Js file upload</h1>
+
+    <h2>Single image upload</h2>
+    <input type="file" id="file" accept="image/*" onchange="processSingleImage(event)">
+
+    <div id="singleImageContainer" class="hide container check active">
+        <img width="200" id="imageDom" src="" alt="temp-placeholder">
+        <p id="imageName"></p>
+        <p id="imageSize"></p>
+    </div>
+    <h2>Multiple images upload</h2>
+    <input type="file" id="file" accept="image/*" multiple onchange="processMultipleImages(event)">
+
+    <div id="multipleImageContainer" class=" container con">
+        <div id="showError"></div>
+
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

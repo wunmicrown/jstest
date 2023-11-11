@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local and Global Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Time Selection</button>
+            <div class="dropdown-content">
+                <a href="#" id="local-time">Local Time</a>
+                <a href="#" id="global-time">Global Time</a>
+            </div>
+        </div>
+    </div>
+    <div id="time-display"></div>
+    <script>
+        function updateClock() {
+            const timeDisplay = document.getElementById("time-display");
+            const localTime = new Date();
+            const options = { timeZone: "UTC" };
+
+            document.getElementById("local-time").addEventListener("click", function () {
+                const localTimeString = localTime.toLocaleString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                timeDisplay.textContent = `Local Time: ${localTimeString}`;
+            });
+
+            document.getElementById("global-time").addEventListener("click", function () {
+                const globalTime = new Date().toLocaleString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: "UTC" });
+                timeDisplay.textContent = `Global Time: ${globalTime}`;
+            });
+
+            // Initially, display the local time
+            const localTimeString = localTime.toLocaleString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+            timeDisplay.textContent = `Local Time: ${localTimeString}`;
+        }
+
+        updateClock();
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>
