@@ -42,9 +42,9 @@ function sumOfAsciiValues(ascii) {
 }
 
 //4.
-function isUppercaseOnly(string) {
-  for (let i = 0; i < string.length; i++) {
-    if (string.charCodeAt(i) < 65 || string.charCodeAt(i) > 90) {
+function isUppercaseOnly(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str.charCodeAt(i) < 65 || str.charCodeAt(i) > 90) {
       return false;
     }
   }
