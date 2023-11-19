@@ -489,7 +489,3 @@ const colors = ["red", "green", "blue", "yellow", "purple", "orange"];
         productDiv.textContent = `${product.name} - $${product.price}`;
     }
     products.forEach(createProductElements);
-
-
-    // 5. Create a function that simulates a to-do list. Given an array of tasks with descriptions, write a function that uses the forEach() method to display each task with a checkbox for completion.
-  
