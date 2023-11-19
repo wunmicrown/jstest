@@ -1,5 +1,4 @@
-<p>
-        Write a function that adds two numbers and returns the result.
+ Write a function that adds two numbers and returns the result.
 
 Create a function that calculates the product of three numbers and returns the value.
 
