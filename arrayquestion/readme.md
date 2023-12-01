@@ -93,3 +93,43 @@ EVERY
 7. Create an array of tasks with due dates. Write a function that uses the forEach() method to display each task's description and due date in a formatted way.
 
 8. Implement a function that simulates a user list. Given an array of user objects with names and roles, write a function that uses the forEach() method to display each user's name and role on a web page.
+
+
+
+                                                INCLUDES
+
+1. Write a JavaScript function that takes an array of numbers and a target number as arguments. Use the includes() method to check if the target number is present in the array and return true or false accordingly.
+
+2.Given an array of strings, write a function that uses the includes() method to check if a specific string exists in the array. Return true if it exists, otherwise false.
+
+3.Create an array of usernames. Write a function that takes a username as an argument and uses the includes() method to check if it exists in the array of usernames. Return true if found, otherwise false.
+
+4.Write a function that takes an array of objects representing products and a product name as an argument. Use the includes() method to check if a product with the given name exists in the array. Return true if found, otherwise false.
+
+5.Create a function that simulates a shopping cart. Given an array of product objects and a product ID, use the includes() method to check if the product with the given ID is already in the cart. Return true if it's in the cart, otherwise false.
+
+6.Write a function that takes an array of email addresses and an email address as an argument. Use the includes() method to check if the provided email address is in the array. Return true if found, otherwise false.
+
+7.Create an array of sentences. Write a function that takes a word as an argument and uses the includes() method to check if any sentence in the array contains that word. Return true if found in any sentence, otherwise false.
+
+8.Implement a function that simulates a membership system. Given an array of member IDs and a member ID as an argument, use the includes() method to check if the provided member ID is part of the membership. Return true if it's a member, otherwise false.
+
+
+
+
+                                                                indexOf
+1.Write a JavaScript function that takes an array of numbers and uses the indexOf() method to find the index of a specific number in the array. Return the index or -1 if not found.
+
+2.Given an array of colors, write a function that uses the indexOf() method to find the index of the color "blue" in the array. Return the index or -1 if not found.
+
+3.Create an array of names. Write a function that uses the indexOf() method to find the index of the name "Alice" in the array. Return the index or -1 if not found.
+
+4.Write a function that takes an array of product objects and uses the indexOf() method to find the index of a specific product by its name in the array. Return the index or -1 if not found.
+
+5.Create a function that simulates a library catalog. Given an array of book objects with titles, write a function that uses the indexOf() method to find the index of a book with a specific title. Return the index or -1 if not found.
+
+6.Write a function that takes an array of email addresses and uses the indexOf() method to find the index of a specific email address in the array. Return the index or -1 if not found.
+
+7.Create an array of tasks with descriptions. Write a function that uses the indexOf() method to find the index of a specific task by its description in the array. Return the index or -1 if not found.
+
+8.Implement a function that simulates a user database. Given an array of user objects with names, write a function that uses the indexOf() method to find the index of a specific user by their name in the array. Return the index or -1 if not found.
